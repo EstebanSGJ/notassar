@@ -64,6 +64,8 @@ section{
     font-weight: bold;
 }
 
+
+
 .aceptar, .registrarEmp{
 	background-color: #f13453;
 	color:white !important;
@@ -279,4 +281,18 @@ table,td{
 #tabIndx td{
 	padding: 5px;
 	font-size: 15px;
+}
+
+.alerta{
+	text-align: center;
+	color: red;
+}
+.registradousuario{
+	text-align: center;
+	color: green;
+}
+.errorregistrousuario{
+	text-align: center;
+	color: green;
+
 }

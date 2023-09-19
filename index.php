@@ -74,6 +74,7 @@
 	}
 </style>
 <body style="font-family:arial;">
+
 	<header>
 		<img src="img/logo.png" id="logo">
 		<!--<a href="./carritodecompras.php" title="Ver carrito de compras">
@@ -109,6 +110,14 @@
 				            <input type="submit" name="aceptar" value="Ingresar" class="aceptar">
 				        </td>
 				    </tr>
+					
+					<tr>
+				        <td colspan="7">
+				            <br><br>
+				            <a href=registro_usuario.php class="Aceptar">Agregar Usuario</a>
+				        </td>
+				    </tr>
+
 				</table>
 				<br>
 			</form>
@@ -128,6 +137,9 @@
 	
 	function nuevo() {
 		alert("Por favor, escribe al administrador del sistema o contacta al correo lsanchezc@corporativosaarme.com");
+	}
+	function verAdd() {
+		window.open("registrar_usuario.php", "ventanaEmergente", "width=700,height=500,resizable=no");
 	}
 </script>
 </html>

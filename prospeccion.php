@@ -33,6 +33,13 @@
 		font-size: 12px;
 		width: 100% !important;
 	}
+
+	.button-container {
+            position: fixed;
+            top: 10px; /* Ajusta la distancia desde la parte superior */
+            right: 10px; /* Ajusta la distancia desde la derecha */
+        }
+
 </style>
 <body onload="changeLabels();">
 	<?php include 'menu.php'; ?>
@@ -111,6 +118,17 @@
 			?>
 		</table>
 	</div>
+
+	<div class="container">
+        <!-- Contenedor para el botón de cierre de sesión -->
+        <div class="button-container">
+            <!-- Botón con estilo Danger de Bootstrap para cerrar sesión -->
+            <form method="post" action="cerrar_sesion.php">
+                <button class="btn btn-danger" type="submit">Cerrar Sesión</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 <script>
 	function changeLeadColor(argument) {

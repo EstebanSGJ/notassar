@@ -3,6 +3,8 @@
 	include 'conexion.php';
 	error_reporting(0);
 	echo "Usuario: ".$_SESSION['$user'];
+	
+	
 	echo"<br>";
 	$codE = $_SESSION['$CodiEmp'];
 	$varsesion=$_SESSION['$user'];
@@ -56,6 +58,12 @@
 	td input{
 		width: 100%;
 	}
+	.button-container {
+            position: fixed;
+            top: 10px; /* Ajusta la distancia desde la parte superior */
+            right: 10px; /* Ajusta la distancia desde la derecha */
+        }
+	 
 </style>
 <body onload="ocultarInicio();">
 	<?php include 'menu.php'; ?>
@@ -231,6 +239,17 @@
 		</form>
 	</center>
 	<br><br>
+	
+	<div class="container">
+        <!-- Contenedor para el botón de cierre de sesión -->
+        <div class="button-container">
+            <!-- Botón con estilo Danger de Bootstrap para cerrar sesión -->
+            <form method="post" action="cerrar_sesion.php">
+                <button class="btn btn-danger" type="submit">Cerrar Sesión</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 <script>
 	function ocultarInicio() {
@@ -260,6 +279,8 @@
 			break;
 		}
 	}
+   
+ 
 	
 </script>
 </html>
